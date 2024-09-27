@@ -195,7 +195,7 @@ body {background: #f3f2ef;}
 
 .popup2 img {width:100%;margin: 0 ;}
 
-.popup3 {position: absolute; top:-50px;right:-400px;width: 400px;display: none;}
+.popup3 {position: absolute; top:-50px;right:-200px;width: 400px;display: none;}
 
 .popup3 h3 {text-align: center;margin-bottom: 50px;font-size: 25px;display: none;}
 
@@ -207,7 +207,7 @@ body {background: #f3f2ef;}
 
 .popup3 img {width:100%;margin: 0 ;transform: rotate(90deg);}
 
-.popup4 {position: absolute; top:-50px;right:-400px;width: 400px;display: none;}
+.popup4 {position: absolute; top:-50px;right:-200px;width: 400px;display: none;}
 
 .popup4 h3 {text-align: center;margin-bottom: 50px;font-size: 25px;display: none;}
 
@@ -219,7 +219,7 @@ body {background: #f3f2ef;}
 
 .popup4 img {width:100%;margin: 0 ;transform: rotate(90deg);}
 
-.popup5 {position: absolute; top:-50px;right:-400px;width: 400px;display: none;}
+.popup5 {position: absolute; top:-50px;right:-200px;width: 400px;display: none;}
 
 .popup5 h3 {text-align: center;margin-bottom: 50px;font-size: 25px;display: none;}
 
@@ -231,7 +231,7 @@ body {background: #f3f2ef;}
 
 .popup5 img {width:100%;margin: 0 ;transform: rotate(90deg);}
 
-.popup6 {position: absolute; top:-50px;right:-400px;width: 400px;display: none;}
+.popup6 {position: absolute; top:-50px;right:-200px;width: 400px;display: none;}
 
 .popup6 h3 {text-align: center;margin-bottom: 50px;font-size: 25px;display: none;}
 
