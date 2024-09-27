@@ -179,9 +179,88 @@ body {background: #f3f2ef;}
 #section3 .ui_ux .text_box .t3 {font-size: 20px;display: flex;gap: 30px; }
 #section3 .ui_ux .text_box .t3 li {}
 
-.btn_box {width: 200px; height: 50px; border: 1px solid #000; font-size: 20px;text-align: center;line-height: 50px;margin-top: 50px; }
+.btn_box {display: flex;gap: 30px;}
+.btn {height: 50px; border: 1px solid #000; font-size: 20px;text-align: center;line-height: 50px;margin-top: 50px;width: 200px;}
 
-.btn_box a {display: block;}
+.btn2 {height: 50px; border: 1px solid #000; font-size: 20px;text-align: center;line-height: 50px;margin-top: 50px;width: 200px;cursor: pointer;}
+
+.popup2 {position: absolute; top:150px;right:0;width: 500px;display: none}
+
+.popup2 h3 {text-align: center;margin-bottom: 50px;font-size: 25px;display: none}
+
+.popup2 p {font-size: 20px;font-weight: bold;text-align: center;margin-bottom: 30px;display: none}
+
+.popup2 figure {width: 100px;margin: 0 auto;display: none;position: relative;}
+.popup2 figure .TAB {position: absolute;right:-100px ;top:0; font-size: 30px;font-weight: bold;}
+
+.popup2 img {width:100%;margin: 0 ;}
+
+.popup3 {position: absolute; top:-50px;right:-400px;width: 400px;display: none;}
+
+.popup3 h3 {text-align: center;margin-bottom: 50px;font-size: 25px;display: none;}
+
+.popup3 p {font-size: 20px;font-weight: bold;text-align: center;margin-bottom: 30px;display: none;}
+
+.popup3 figure {width: 100px;margin: 0 auto;margin-left: 70px;display: none;;position: relative;}
+
+.popup3 figure .Ctrl {position: absolute;right:-100px ;top:0; font-size: 30px;font-weight: bold;}
+
+.popup3 img {width:100%;margin: 0 ;transform: rotate(90deg);}
+
+.popup4 {position: absolute; top:-50px;right:-400px;width: 400px;display: none;}
+
+.popup4 h3 {text-align: center;margin-bottom: 50px;font-size: 25px;display: none;}
+
+.popup4 p {font-size: 20px;font-weight: bold;text-align: center;margin-bottom: 30px;display: none;}
+
+.popup4 figure {width: 100px;margin: 0 auto;margin-left: 70px;position: relative;display: none;}
+
+.popup4 figure .Ctrl {position: absolute;right:-150px ;top:0; font-size: 30px;font-weight: bold;}
+
+.popup4 img {width:100%;margin: 0 ;transform: rotate(90deg);}
+
+.popup5 {position: absolute; top:-50px;right:-400px;width: 400px;display: none;}
+
+.popup5 h3 {text-align: center;margin-bottom: 50px;font-size: 25px;display: none;}
+
+.popup5 p {font-size: 20px;font-weight: bold;text-align: center;margin-bottom: 30px;display: none;}
+
+.popup5 figure {width: 100px;margin: 0 auto;margin-left: 70px;position: relative;display: none;}
+
+.popup5 figure .Ctrl {position: absolute;right:-150px ;top:0; font-size: 30px;font-weight: bold;}
+
+.popup5 img {width:100%;margin: 0 ;transform: rotate(90deg);}
+
+.popup6 {position: absolute; top:-50px;right:-400px;width: 400px;display: none;}
+
+.popup6 h3 {text-align: center;margin-bottom: 50px;font-size: 25px;display: none;}
+
+.popup6 p {font-size: 20px;font-weight: bold;text-align: center;margin-bottom: 30px;display: none;}
+
+.popup6 figure {width: 100px;margin: 0 auto;margin-left: 70px;position: relative;display: none;}
+
+.popup6 figure .Ctrl {position: absolute;right:-150px ;top:0; font-size: 30px;font-weight: bold;}
+
+.popup6 img {width:100%;margin: 0 ;transform: rotate(90deg);}
+
+.popup7 {position: absolute; bottom:0px;left:100%;width: 400px;display: none;}
+
+.popup7 h3 {text-align: center;margin-bottom: 50px;font-size: 25px;display: none;}
+
+.popup7 p {font-size: 20px;font-weight: bold;text-align: center;margin-bottom: 30px;display: none;}
+
+.popup7 figure {width: 100px;margin: 0 auto;margin-left: 70px;position: relative;display: none;top:-50px}
+
+.popup7 figure .Ctrl {position: absolute;right:-120px ;top:0; font-size: 30px;font-weight: bold;}
+
+.popup7 img {width:100%;margin: 0 ;transform: rotate(450deg) scaleX(-1)}
+
+
+
+
+
+
+
 
 
 #section4 {width: 100%; margin-top: 200px;}
