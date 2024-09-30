@@ -214,7 +214,7 @@ $(window).scroll(function () {
 });
 
 
-$(".btn_box .btn2").click(function () {
+$(".btn_box .b2").click(function () {
     $(".popup2").fadeIn();
     $(".popup2 h3").delay(300).fadeIn();
     $(".popup2 p").delay(300).fadeIn();
