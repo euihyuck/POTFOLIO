@@ -1,6 +1,6 @@
-$('#section1 .rabit_box .rabit').click(function () {
+/* $('#section1 .rabit_box .rabit').click(function () {
     alert('HI^ㅡ^')
-})
+}) */
 
 function bar() {
     let scrT = $(window).scrollTop();
@@ -44,7 +44,7 @@ $('.ui_ux li.monitor').mouseenter(function () {
         $(this).find('.screen img').css({ transition: '1s' })
     } else if (monitorImg < 500) {
         $(this).find('.screen img').css({ transition: '2s' })
-    } else if (monitorImg < 1000) {
+    } else if (monitorImg < 500) {
         $(this).find('.screen img').css({ transition: '3s' })
     } else if (monitorImg < 1800) {
         $(this).find('.screen img').css({ transition: '4s' })
@@ -109,26 +109,26 @@ $('.gallery_modal').click(function (e) {
 
 })
 
-$('.f_modal').click(function (e) {
-    if (e.target == this) {
-        $(this).fadeOut(500)
-    }
-    $('body').css({ overflow: '' })
+// $('.f_modal').click(function (e) {
+//     if (e.target == this) {
+//         $(this).fadeOut(500)
+//     }
+//     $('body').css({ overflow: '' })
 
-})
+// })
 
-$('#section12 figure').click(function () {
-    $('.f_modal').fadeIn(500)
-    $('body').css({ overflow: 'hidden' })
-})
+// $('#section12 figure').click(function () {
+//     $('.f_modal').fadeIn(500)
+//     $('body').css({ overflow: 'hidden' })
+// })
 
-$('#section12 .img_box').click(function () {
-    $('.f_modal').fadeIn(500)
-    $('body').css({ overflow: 'hidden' })
-})
+// $('#section12 .img_box').click(function () {
+//     $('.f_modal').fadeIn(500)
+//     $('body').css({ overflow: 'hidden' })
+// })
 
 $(document).keydown(function (e) {
-    if (e.key === 'Tab') {
+    /* if (e.key === 'Tab') {
         e.preventDefault();
     }
 
@@ -140,7 +140,7 @@ $(document).keydown(function (e) {
 
     if (e.ctrlKey && ['a', 's', 'd'].includes(e.key.toLowerCase())) {
         e.preventDefault();
-    }
+    } */
 
 
     if (e.key == 'Escape') {
@@ -156,47 +156,48 @@ $(document).keydown(function (e) {
 
         $('body').css({ overflow: '' })
     }
-    if (e.keyCode === 9) {
-
-        $('.popup2 figure').fadeOut(300)
-        $('.popup2 h3').fadeOut(1000)
-        $('.popup2 p').fadeOut(1000)
-
-
-    }
-    if (e.code === 'ControlLeft') {
-        $('.popup3 figure').fadeOut(300)
-        $('.popup3 h3').fadeOut(1000)
-        $('.popup3 p').fadeOut(1000)
-    }
-
-
-    if (e.ctrlKey && e.key === 'a') {
-        $('.popup4 figure').fadeOut(300)
-        $('.popup4 h3').fadeOut(1000)
-        $('.popup4 p').fadeOut(1000)
-    }
-
-    if (e.ctrlKey && e.key === 's') {
-        $('.popup5 figure').fadeOut(300)
-        $('.popup5 h3').fadeOut(1000)
-        $('.popup5 p').fadeOut(1000)
-    }
-
-    if (e.ctrlKey && e.key === 'd') {
-        $('.popup6 figure').fadeOut(300)
-        $('.popup6 h3').fadeOut(1000)
-        $('.popup6 p').fadeOut(1000)
-    }
-    if (e.key === 'End') {
-        $('.popup7 figure').fadeOut(300)
-        $('.popup7 h3').fadeOut(1000)
-        $('.popup7 p').fadeOut(1000)
-    }
-
+    /*   if (e.keyCode === 9) {
+  
+          $('.popup2 figure').fadeOut(300)
+          $('.popup2 h3').fadeOut(500)
+          $('.popup2 p').fadeOut(500)
+  
+  
+      }
+      if (e.code === 'ControlLeft') {
+          $('.popup3 figure').fadeOut(300)
+          $('.popup3 h3').fadeOut(500)
+          $('.popup3 p').fadeOut(500)
+      }
+  
+  
+      if (e.ctrlKey && e.key === 'a') {
+          $('.popup4 figure').fadeOut(300)
+          $('.popup4 h3').fadeOut(500)
+          $('.popup4 p').fadeOut(500)
+      }
+  
+      if (e.ctrlKey && e.key === 's') {
+          $('.popup5 figure').fadeOut(300)
+          $('.popup5 h3').fadeOut(500)
+          $('.popup5 p').fadeOut(500)
+      }
+  
+      if (e.ctrlKey && e.key === 'd') {
+          $('.popup6 figure').fadeOut(300)
+          $('.popup6 h3').fadeOut(500)
+          $('.popup6 p').fadeOut(500)
+      }
+      if (e.key === 'End') {
+          $('.popup7 figure').fadeOut(300)
+          $('.popup7 h3').fadeOut(500)
+          $('.popup7 p').fadeOut(500)
+      }
+   */
 
 
 })
+
 
 
 let circleW = $('.mouse_circle').width();
@@ -210,15 +211,34 @@ $(window).mousemove(function (e) {
 
 $(window).scroll(function () {
     $('.mouse_circle').css({ top: y - circleH / 2 });
-    $('.f_modal').fadeOut(500)
+    // $('.f_modal').fadeOut(500)
 });
 
 
-$(".btn_box .b2").click(function () {
+
+
+$(".Ctrl").click(function () {
+    $(this).parents(".popup0").hide()
+    $(this).parents(".popup0").children().hide()
+    $('.monitor').removeClass('on')
+})
+
+$(".btn2").click(function () {
+    let dataBoxNum = $(this).attr('data-boxnum')
+    $(".popup" + dataBoxNum).fadeIn();
+    $(".popup" + dataBoxNum).find(".Ctrl").delay(0).fadeIn();
+    $(".popup" + dataBoxNum).find("h3").delay(0).fadeIn();
+    $(".popup" + dataBoxNum).find("p").delay(150).fadeIn();
+    $(".popup" + dataBoxNum).find("figure").delay(300).fadeIn();
+
+    $(this).parents('.btn_box').siblings('.ui_ux').find('.monitor').addClass('on')
+})
+
+/* $(".b2").click(function () {
     $(".popup2").fadeIn();
-    $(".popup2 h3").delay(300).fadeIn();
-    $(".popup2 p").delay(300).fadeIn();
-    $(".popup2 figure").delay(700).fadeIn();
+    $(".popup2 h3").delay(0).fadeIn();
+    $(".popup2 p").delay(150).fadeIn();
+    $(".popup2 figure").delay(300).fadeIn();
 
 })
 
@@ -227,7 +247,6 @@ $(".b3").click(function () {
     $(".popup3 h3").delay(300).fadeIn();
     $(".popup3 p").delay(300).fadeIn();
     $(".popup3 figure").delay(700).fadeIn();
-
 })
 
 $(".b4").click(function () {
@@ -257,20 +276,26 @@ $(".b7").click(function () {
     $(".popup7 p").delay(300).fadeIn();
     $(".popup7 figure").delay(700).fadeIn();
 })
-
+ */
 $('#section10 .con3 .im').click(function () {
     let imgSrc = $(this).find('img').attr('src')
     $('.gallery_modal3 .m1').attr('src', imgSrc)
-    $('.gallery_modal3').show()
+    $('.gallery_modal3').show().css({ display: 'flex' })
     $('body').css({ overflow: 'hidden' })
+
+    // 파일 이름 추출하기 (i1 부분)
+    var fileName = imgSrc.split('/').pop().split('.')[0];
+
+    for (var i = 1; i < 7; i++) {
+        $('.source_box').append('<img src="images/' + fileName + '-' + i + '.png" alt="">')
+        // $('.source_box').append('<img src="images/i1-1.png" alt="s">')
+    }
 })
 
 $('.gallery_modal3').click(function (e) {
     if (e.target == this) {
         $(this).fadeOut(500)
     }
-
-
     $('body').css({ overflow: '' })
 
 })
