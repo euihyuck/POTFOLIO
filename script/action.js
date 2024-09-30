@@ -147,7 +147,7 @@ $(document).keydown(function (e) {
         $('.gnb_box').fadeOut(500)
         $('.gallery_modal').fadeOut(500)
         $('.f_modal').fadeOut(500)
-
+        $('.gallery_modal3').fadeOut(500)
         $('.popup3').fadeOut(500)
         $('.popup3 h3').fadeOut(500)
         $('.popup3 p').fadeOut(500)
@@ -258,3 +258,19 @@ $(".b7").click(function () {
     $(".popup7 figure").delay(700).fadeIn();
 })
 
+$('#section10 .con3 .im').click(function () {
+    let imgSrc = $(this).find('img').attr('src')
+    $('.gallery_modal3 .m1').attr('src', imgSrc)
+    $('.gallery_modal3').show()
+    $('body').css({ overflow: 'hidden' })
+})
+
+$('.gallery_modal3').click(function (e) {
+    if (e.target == this) {
+        $(this).fadeOut(500)
+    }
+
+
+    $('body').css({ overflow: '' })
+
+})
