@@ -457,13 +457,23 @@ body {background: #f3f2ef;}
    
 
 
-    .gallery_modal3 .source_box[data-popup="i3"] img:nth-child(1) {right: 100px; top: -100px;transform: scale(1);}
-    .gallery_modal3 .source_box[data-popup="i3"] img:nth-child(2) {right: 100px; top: 0px;transform: scale(1);}
-    .gallery_modal3 .source_box[data-popup="i3"] img:nth-child(3) {right: 200px; top: 200px;transform: scale(1)rotate(90deg);}
-    .gallery_modal3 .source_box[data-popup="i3"] img:nth-child(4) {right: 100px; top:-150px;transform: scale(1);}
-    .gallery_modal3 .source_box[data-popup="i3"] img:nth-child(5) {right:100px; top: -100px;transform: scale(1)rotate(45deg);}
+    .gallery_modal3 .source_box[data-popup="i3"] img:nth-child(1) {right: 100px; top: -100px;transform: scale(.8);}
+    .gallery_modal3 .source_box[data-popup="i3"] img:nth-child(2) {right: 100px; top: 0px;transform: scale(.8);}
+    .gallery_modal3 .source_box[data-popup="i3"] img:nth-child(3) {right: 200px; top: 200px;transform: scale(.8)rotate(90deg);}
+    .gallery_modal3 .source_box[data-popup="i3"] img:nth-child(4) {right: 100px; top:-150px;transform: scale(.8);}
+    .gallery_modal3 .source_box[data-popup="i3"] img:nth-child(5) {right:100px; top: -100px;transform: scale(.8)rotate(45deg);}
 
-    
+
+    .gallery_modal3 .source_box[data-popup="i5"] img:nth-child(1) {right: 100px; top: -100px;;}
+    .gallery_modal3 .source_box[data-popup="i5"] img:nth-child(2) {right: 400px; top: 0px; ;}
+    .gallery_modal3 .source_box[data-popup="i5"] img:nth-child(3) {right: 200px; top: -100px;;}
+
+
+    .gallery_modal3 .source_box[data-popup="i6"] img:nth-child(1) {right: 100px; top: -100px;transform: scale(.8);}
+    .gallery_modal3 .source_box[data-popup="i6"] img:nth-child(2) {right: 400px; top: 0px;transform: scale(.8) ;}
+    .gallery_modal3 .source_box[data-popup="i6"] img:nth-child(3) {right: 200px; top: -100px;transform: scale(.8);}
+
+      
     .gallery_modal3 .source_box[data-popup="i8"] img:nth-child(1) {right:100px;top:-200px;transform: scale(.8);}
     .gallery_modal3 .source_box[data-popup="i8"] img:nth-child(2) {right:400px;transform: scale(.8);}
     .gallery_modal3 .source_box[data-popup="i8"] img:nth-child(3) {right:350px;top:100px;transform: scale(.8);}
