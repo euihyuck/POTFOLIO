@@ -1,7 +1,7 @@
 /* $('#section1 .rabit_box .rabit').click(function () {
     alert('HI^ㅡ^')
-}) */
-
+})
+ */
 function bar() {
     let scrT = $(window).scrollTop();
     let winW = $(window).width();
@@ -278,14 +278,15 @@ $(".b7").click(function () {
 })
  */
 $('#section10 .con3 .im').click(function () {
-    let imgSrc = $(this).find('img').attr('src')
-    $('.gallery_modal3 .m1').attr('src', imgSrc)
-    $('.gallery_modal3').show().css({ display: 'flex' })
-    $('body').css({ overflow: 'hidden' })
+    let imgSrc = $(this).find('img').attr('src');
+    $('.gallery_modal3 .m1').attr('src', imgSrc);
+    $('.gallery_modal3').show().css({ display: 'flex' });
+    $('body').css({ overflow: 'hidden' });
+    $('.source_box').empty();
 
     // 파일 이름 추출하기 (i1 부분)
     var fileName = imgSrc.split('/').pop().split('.')[0];
-
+    $('.source_box').attr('data-popup', fileName);
     for (var i = 1; i < 7; i++) {
         $('.source_box').append('<img src="images/' + fileName + '-' + i + '.png" alt="">')
         // $('.source_box').append('<img src="images/i1-1.png" alt="s">')
