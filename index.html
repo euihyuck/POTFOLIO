@@ -333,11 +333,21 @@
                  <!-- Swiper -->
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/s1.png" alt=""></div>
-                        <div class="swiper-slide"><img src="images/s2.png" alt=""></div>
+                        <div class="swiper-slide">
+                            <div class="slide_s1">
+                                <img src="images/s1.png" alt="">
+                                <!-- <div class="text">글자글자</div> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_s2">
+                                <img src="images/s2.png" alt="">
+                                <!-- <div class="text">글자글자</div> -->
+                            </div>
+                        </div>
                         <div class="swiper-slide"><img src="images/s3.png" alt=""></div>
                         <div class="swiper-slide"><img src="images/s4.png" alt=""></div>
-                        <div class="swiper-slide"><img src="images/s5.png" alt=""></div>
+                        <!-- <div class="swiper-slide"><img src="images/s5.png" alt=""></div> -->
                         <div class="swiper-slide"><img src="images/s6.png" alt=""></div>
                         <div class="swiper-slide"><img src="images/s7.png" alt=""></div>
                         <div class="swiper-slide"><img src="images/s8.png" alt=""></div>
@@ -446,7 +456,7 @@
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
-        delay: 2500,
+        delay: 1000000,
         disableOnInteraction: false
       },
       pagination: {
@@ -462,7 +472,13 @@
           progressCircle.style.setProperty("--progress", 1 - progress);
           progressContent.textContent = `${Math.ceil(time / 1000)}s`;
         }
-      }
+        
+      },
+        on: {
+            activeIndexChange: function () {
+                $('#section9 .swiper-slide').eq(this.realIndex).addClass('on').siblings().removeClass('on')
+            }
+        }
     });
   </script>
  
