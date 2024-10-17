@@ -156,6 +156,7 @@ body {background: #f3f2ef;}
 #section2 .centerbox1400 {display: flex;}
 
 #section2 .img_box {}
+#section2 .img_box p {font-weight: bold;font-size: 18px;margin-top: 30px}
 
 #section2 .text_box {margin-top: 200px;}
 #section2 .text_box .text{display: flex;gap: 200px; flex-wrap: wrap;}
@@ -441,7 +442,7 @@ body {background: #f3f2ef;}
 
   /* 4.popup */
 
-  #section10 {width: 100%;height: 1000vh; margin-top: 500px; }
+  #section10 {width: 100%;height: 1000vh; }
 
   .con3 {position: relative;margin-bottom: 500px;margin-top: 500px;}
     .con3 .title {-webkit-trxt-stroke:2px #b1dd40; color: transparent; font-size: 100px;}
